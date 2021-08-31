@@ -13,13 +13,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-prismic-previews',
       options: {
-        repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+        repositoryName: 'lattiomore',
       },
     },
     {
       resolve: 'gatsby-source-prismic',
       options: {
-        repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+        repositoryName: 'lattiomore',
         linkResolver: require('./src/utils/LinkResolver').linkResolver,
         schemas: {
           homepage: require('./custom_types/homepage.json'),
