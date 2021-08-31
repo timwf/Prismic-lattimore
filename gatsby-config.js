@@ -5,6 +5,8 @@ require('dotenv').config({
 })
 
 module.exports = {
+  
+
   siteMetadata: {
     title: 'Gatsby + Prismic Tutorial',
     description: 'Learn how to integrate Prismic into your Gatsby project.',
@@ -29,6 +31,9 @@ module.exports = {
       },
     },
     'gatsby-plugin-image',
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-react-svg`,
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',

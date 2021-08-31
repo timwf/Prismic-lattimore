@@ -37,6 +37,7 @@ export const query = graphql`
           ...PageDataBodyFullWidthImage
           ...PageDataBodyImageGallery
           ...PageDataBodyImageHighlight
+          ...PageDataBodyPageHeading
         }
       }
     }

@@ -1,0 +1,137 @@
+.footer{
+  background-color: #2A2A2A;
+  color: white;
+}
+
+.footer-desktop{
+  display: flex;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  display: none;
+
+  @media (min-width: 1180px) {
+    display: flex;
+  }
+
+  h4{
+    font-family: 'gt-flexa-medium';
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__col-one{
+    width: 33.3333%;
+
+    a{
+      color: white;
+
+      &:hover{
+        opacity: 0.5;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__col-two{
+    width: 33.3333%;
+    display: flex;
+    justify-content: center;
+
+    h2{
+      color: white;
+    }
+
+    svg{
+      path{
+        fill: white;
+      }
+    }
+  }
+
+  &__col-three{
+    width: 33.3333%;
+    display: flex;
+    justify-content: flex-end;
+
+    h4{
+      margin-left: 30px;
+      text-decoration: underline;
+
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.footer-mobile{
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 31px;
+
+  @media (min-width: 1180px) {
+    display: none;
+  }
+
+  .menu__logo{
+    left: auto !important;
+    top: auto !important;
+  }
+
+  &__col-one{
+    width: 75%;
+    color: white;
+
+    h1{
+      font-size: 17px;
+      line-height: 23px;
+      margin-left: 15px;
+    }
+
+    svg{
+      top: 17px;
+      left: -13px;
+      height: 11px;
+
+      path{
+        fill: white;
+      }
+    }
+
+    a{
+      color: white;
+    }
+
+    h4{
+      margin-top: 29px;
+      font-family: 'gt-flexa-medium';
+      font-size: 13px;
+      font-weight: 500;
+
+      a{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__col-two{
+    width: 40%;
+    color: white;
+    text-align: rigth;
+
+    a{
+      color: white;
+      text-decoration: underline;
+    }
+
+    h4{
+      margin-bottom: 24px;
+      font-family: 'gt-flexa-medium';
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: underline;
+      text-align: right;
+
+    }
+  }
+}

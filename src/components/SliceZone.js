@@ -5,6 +5,7 @@ import { ImageGallery } from '../slices/ImageGallery'
 import { ImageHighlight } from '../slices/ImageHighlight'
 import { Quote } from '../slices/Quote'
 import { Text } from '../slices/Text'
+import { PageHeading } from '../slices/PageHeading'
 
 export const SliceZone = ({ sliceZone }) => {
   const sliceComponents = {
@@ -13,6 +14,7 @@ export const SliceZone = ({ sliceZone }) => {
     image_highlight: ImageHighlight,
     quote: Quote,
     text: Text,
+    page_heading: PageHeading,
   }
 
   const sliceZoneContent = sliceZone.map((slice, index) => {

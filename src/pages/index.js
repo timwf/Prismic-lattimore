@@ -17,13 +17,6 @@ const HomeTemplate = ({ data }) => {
   return (
     <Layout isHomepage={true}>
       <Seo title="Home" />
-      <HomepageBanner
-        title={RichText.asText(doc.banner_title.raw)}
-        description={RichText.asText(doc.banner_description.raw)}
-        linkUrl={doc.banner_link.url}
-        linkLabel={RichText.asText(doc.banner_link_label.raw)}
-        backgroundUrl={doc.banner_background.url}
-      />
       <SliceZone sliceZone={doc.body} />
     </Layout>
   )
@@ -60,6 +53,7 @@ export const query = graphql`
           ...HomepageDataBodyFullWidthImage
           ...HomepageDataBodyImageGallery
           ...HomepageDataBodyImageHighlight
+          ...HomepageDataBodyPageHeading
         }
       }
     }

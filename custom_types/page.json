@@ -90,6 +90,24 @@
             },
             "repeat": {}
           },
+          "page_heading": {
+            "type": "Slice",
+            "fieldset": "heading",
+            "description": "A stylized quote",
+            "icon": "format_quote",
+            "display": "list",
+            "non-repeat": {
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "allowTargetBlank": true,
+                  "label": "heading"
+                }
+              }
+            },
+            "repeat": {}
+          },
           "image_gallery": {
             "type": "Slice",
             "fieldset": "Image Gallery",
