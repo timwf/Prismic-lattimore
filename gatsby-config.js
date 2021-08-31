@@ -1,3 +1,5 @@
+// gatsby-config.js file
+
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -8,6 +10,12 @@ module.exports = {
     description: 'Learn how to integrate Prismic into your Gatsby project.',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-prismic-previews',
+      options: {
+        repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+      },
+    },
     {
       resolve: 'gatsby-source-prismic',
       options: {
@@ -20,6 +28,7 @@ module.exports = {
         },
       },
     },
+    'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',
